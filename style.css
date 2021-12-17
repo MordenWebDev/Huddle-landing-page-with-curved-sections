@@ -1,0 +1,324 @@
+/* css reset */
+*{
+    box-sizing: border-box;
+}
+/* css body default */
+body{
+    margin: 0%;
+    font-family: 'Open Sans', sans-serif;
+/* font-family: 'Poppins', sans-serif; */
+}
+/* header section start */
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 3% 7%;
+    
+    justify-content: center;
+   text-align: center;
+    
+}
+/* navstyle */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav a{
+    text-decoration: none;
+    background-color: white;
+    color: hsl(322,100%,66%);
+    border: 1px solid hsl(322,100%,66%);
+    border-radius: 1000px;
+    padding: .5rem 1.5rem;
+}
+nav a:hover{
+    box-shadow: 0 0 4px hsl(322,100%,66%);
+}
+/* start of hero section */
+.hero{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18%;
+    text-align: center;
+    color: hsl(192,100%,9%);
+}
+/* big font in hero section */
+.title{
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+}
+.content1 p{
+    width: 500px;
+    line-height: 1.5;
+}
+.content1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* button style */
+.btn{
+    padding: 1.5rem 7rem;
+    background-color:hsl(322,100%,66%); 
+    color: white;
+    border: none;
+    outline: none;
+    margin: 1rem;
+    font-size: inherit;
+    margin-top: 3.5rem;
+    border-radius: 1000px;
+}
+.btn:hover{
+    background-color: hsl(322,100%,76%);
+}
+.image{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem
+}
+.heroimg{
+    width: 100%;
+    
+}
+/* card style */
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card{
+    
+    display: flex;
+    flex-direction:column;
+    padding: 1rem;
+    
+}
+.cimage{
+    align-self: flex-start;
+}
+.cardcontent h2{
+    font-size: 6rem;
+    margin-bottom: 0%;
+    margin-top: .5rem;
+}
+/* start of main section */
+main{
+   
+    flex-direction: column;
+    display: flex;
+    /* background-color: red; */
+  
+}
+/* it is the image for curved section */
+.topimg{
+    margin: 0%;
+}
+
+.topimg img{
+    width: 100%;
+    transform: translateY(10px);
+}
+.grow{
+    background-color: hsl(210,100%,98%);
+    padding: 3% 7%;
+}
+.content2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+   
+}
+.growimg img{
+    width: 100%;
+}
+.content2 p{
+    width: 450px;
+    line-height: 1.5;
+}
+.ctext{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.botomimg img{
+    width: 100%;
+}
+.flow{
+    padding: 3% 7%;
+    background-color: #fff;
+}
+.users{
+    padding: 3% 7%;
+    background-color: hsl(210,100%,98%);
+}
+.content3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+.flowimg img{
+    width: 100%;
+}
+/* community section */
+.comunity{
+    padding: 7% 7%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+/* start of footer */
+.fcontent{
+    padding: 3% 10%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+footer{
+    background-color: hsl(192,100%,9%);
+}
+footer .topimg{
+    
+    transform: translateY(-15px);
+    transform: rotate(180deg);
+
+}
+/* it is used to change the logo to white */
+.logowhitechange {
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(331deg)
+    brightness(109%) contrast(101%);
+    margin-bottom: 3rem;
+}
+.fpara{
+    width: 300px;
+    line-height: 1.5;
+}
+.footercontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.links{
+    margin-top: .5rem;
+    display: flex;
+
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: inherit;
+   
+   
+   
+}
+
+.fimg{
+margin-right: .5rem;
+}
+.contact1{
+    margin: .5rem;
+}
+.contact2{
+    margin: .5rem;
+}
+.contactbtn{
+    border: none;
+    background-color: hsl(322,100%,66%);
+    color: white;
+    padding: .7rem 1rem;
+    border-radius: .5rem;
+    margin: .5rem;
+    font-size: inherit;
+
+}
+input{
+    padding: .7rem 1rem;
+    outline: none;
+    border-color: white;
+
+}
+/* start of media query */
+
+/* for device lower than 1112px */
+
+@media only screen and (max-width: 1112px) {
+    .heroimg img{
+        width: 70%;
+    }
+   
+
+  }
+
+  /* for device lower than 900px */
+  @media only screen and (max-width: 900px) {
+
+    .content2,.content3{
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .grow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .comunity{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+
+  }
+
+  /* for device lower than 560px */
+  @media only screen and (max-width: 560px) {
+
+    nav img{
+        width: 100px;
+        height: 30px;
+    }
+    .content1 p{
+        width: 325px;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    .flowimg,.growimg{
+        width: 50%;
+    }
+    .content3 p,.content2 p{
+        width: 325px;
+    }
+    .btn{
+        padding: .7rem 1.5rem;
+    }
+    .cardcontent h2{
+        font-size: 3rem;
+    }
+    .fcontent{
+        flex-direction: column-reverse;
+    }
+    .newsletter{
+        margin-bottom: 2rem;
+    }
+      
+
+  }
+
